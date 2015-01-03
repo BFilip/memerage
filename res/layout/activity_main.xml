@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}"
+    android:background="@drawable/bg"
+    >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:text="Your rage level is: 0"
+        android:textSize="30dp"
+		android:layout_centerHorizontal="true"
+		android:gravity="center"
+		android:id="@+id/tvDisplay"
+         />
+    
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:src="@drawable/r1"
+        android:background="@color/white"
+        android:id="@+id/rageImg"
+        />
+    
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Add one"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:id="@+id/bAdd"
+        />
+    
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Subtract one"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:id="@+id/bSub"
+        />
+
+</LinearLayout>
