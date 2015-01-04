@@ -5,5 +5,6 @@
     <string name="hello_world">Hello world!</string>
     <color name="white">#FFFFFF</color>
     <color name="grey">#CCCCCC</color>
+    <color name="blueish">#444488</color>
 
 </resources>
