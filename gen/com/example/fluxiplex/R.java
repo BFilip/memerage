@@ -1148,10 +1148,11 @@ containing a value of this type.
     }
     public static final class raw {
         public static final int blastest_loop=0x7f050000;
-        public static final int clicksound=0x7f050001;
-        public static final int cs=0x7f050002;
-        public static final int csb1=0x7f050003;
-        public static final int csb2=0x7f050004;
+        public static final int blastest_loop_wav=0x7f050001;
+        public static final int clicksound=0x7f050002;
+        public static final int cs=0x7f050003;
+        public static final int csb1_wav=0x7f050004;
+        public static final int csb2_wav=0x7f050005;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 

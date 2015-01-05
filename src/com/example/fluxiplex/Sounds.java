@@ -20,6 +20,9 @@ public class Sounds extends Activity implements OnClickListener{
     SoundPool sp;
     int p1 = 0;
     int p2 = 0;
+    int p3 = 0;
+    int p4 = 0;
+    int sid = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +38,12 @@ public class Sounds extends Activity implements OnClickListener{
 	sp = new SoundPool(5, AudioManager.STREAM_MUSIC, 0);
 	p1 = sp.load(this, R.raw.clicksound, 1);
 	p2 = sp.load(this, R.raw.cs, 1);
+	p3 = sp.load(this, R.raw.blastest_loop_wav, 1);
+	p4 = sp.load(this, R.raw.blastest_loop_wav, 1);
 	//mps = MediaPlayer.create(this, R.raw.cs);
+	
+	sid = sp.play(p3, 1, 1, 0, -1, 1);
+	sp.pause(sid);
     }
 
     @Override
@@ -46,17 +54,27 @@ public class Sounds extends Activity implements OnClickListener{
 	    sp.play(p1, 1, 1, 0, 0, 1);
 	}else if(lol.getId() == R.id.bS2){
 	    tvs1.setText(">    Play Sound 2");
-	    sp.play(p1, 1, 1, 0, 0, 1);
+	    sp.play(p2, 1, 1, 0, 0, 1);
 	}else if(lol.getId() == R.id.bS3){
 	    tvs1.setText(">        Play Sound 3");
-	    sp.play(p2, 1, 1, 0, 0, 1);
+	    //sid = sp.play(p3, 1, 1, 0, -1, 1);
+	    sp.resume(sid);
 	}else if(lol.getId() == R.id.bS4){
-	    tvs1.setText(">            Play Sound 4");
-	    sp.play(p2, 1, 1, 0, 0, 1);
+	    tvs1.setText(">            Stop Sound 3");
+	    sp.pause(sid);
 	}else{
 	    tvs1.setText("Nie ma takiego klikania!");
 	}
 	
+    }
+    
+    @Override
+    protected void onStop() {
+	// TODO Auto-generated method stub
+	super.onStop();
+	
+	sp.release();
+	finish();
     }
 
 }

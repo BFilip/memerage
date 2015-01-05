@@ -1,0 +1,237 @@
+[1mdiff --git a/bin/R.txt b/bin/R.txt[m
+[1mindex f8b7bb2..dfc4cff 100644[m
+[1m--- a/bin/R.txt[m
+[1m+++ b/bin/R.txt[m
+[36m@@ -368,10 +368,11 @@[m [mint layout text 0x7f03001e[m
+ int layout txt 0x7f03001f[m
+ int menu cool_menu 0x7f0d0000[m
+ int raw blastest_loop 0x7f050000[m
+[31m-int raw clicksound 0x7f050001[m
+[31m-int raw cs 0x7f050002[m
+[31m-int raw csb1 0x7f050003[m
+[31m-int raw csb2 0x7f050004[m
+[32m+[m[32mint raw blastest_loop_wav 0x7f050001[m
+[32m+[m[32mint raw clicksound 0x7f050002[m
+[32m+[m[32mint raw cs 0x7f050003[m
+[32m+[m[32mint raw csb1_wav 0x7f050004[m
+[32m+[m[32mint raw csb2_wav 0x7f050005[m
+ int string abc_action_bar_home_description 0x7f0b0001[m
+ int string abc_action_bar_up_description 0x7f0b0002[m
+ int string abc_action_menu_overflow_description 0x7f0b0003[m
+[1mdiff --git a/bin/classes.dex b/bin/classes.dex[m
+[1mindex cf31fad..603c3a8 100644[m
+Binary files a/bin/classes.dex and b/bin/classes.dex differ
+[1mdiff --git a/bin/classes/com/example/fluxiplex/MainActivity$1.class b/bin/classes/com/example/fluxiplex/MainActivity$1.class[m
+[1mindex d1824cd..6667c43 100644[m
+Binary files a/bin/classes/com/example/fluxiplex/MainActivity$1.class and b/bin/classes/com/example/fluxiplex/MainActivity$1.class differ
+[1mdiff --git a/bin/classes/com/example/fluxiplex/MainActivity$2.class b/bin/classes/com/example/fluxiplex/MainActivity$2.class[m
+[1mindex ed8b62c..2ae4427 100644[m
+Binary files a/bin/classes/com/example/fluxiplex/MainActivity$2.class and b/bin/classes/com/example/fluxiplex/MainActivity$2.class differ
+[1mdiff --git a/bin/classes/com/example/fluxiplex/MainActivity.class b/bin/classes/com/example/fluxiplex/MainActivity.class[m
+[1mindex 6a0cd1c..937e4c5 100644[m
+Binary files a/bin/classes/com/example/fluxiplex/MainActivity.class and b/bin/classes/com/example/fluxiplex/MainActivity.class differ
+[1mdiff --git a/bin/classes/com/example/fluxiplex/R$raw.class b/bin/classes/com/example/fluxiplex/R$raw.class[m
+[1mindex 8e6211a..5ff432e 100644[m
+Binary files a/bin/classes/com/example/fluxiplex/R$raw.class and b/bin/classes/com/example/fluxiplex/R$raw.class differ
+[1mdiff --git a/bin/classes/com/example/fluxiplex/R$string.class b/bin/classes/com/example/fluxiplex/R$string.class[m
+[1mindex 5402324..c82a83f 100644[m
+Binary files a/bin/classes/com/example/fluxiplex/R$string.class and b/bin/classes/com/example/fluxiplex/R$string.class differ
+[1mdiff --git a/bin/classes/com/example/fluxiplex/R$style.class b/bin/classes/com/example/fluxiplex/R$style.class[m
+[1mindex 060818d..e159218 100644[m
+Binary files a/bin/classes/com/example/fluxiplex/R$style.class and b/bin/classes/com/example/fluxiplex/R$style.class differ
+[1mdiff --git a/bin/classes/com/example/fluxiplex/R$styleable.class b/bin/classes/com/example/fluxiplex/R$styleable.class[m
+[1mindex 9b1131a..1b96ddc 100644[m
+Binary files a/bin/classes/com/example/fluxiplex/R$styleable.class and b/bin/classes/com/example/fluxiplex/R$styleable.class differ
+[1mdiff --git a/bin/classes/com/example/fluxiplex/Sounds.class b/bin/classes/com/example/fluxiplex/Sounds.class[m
+[1mindex 43c1af6..d46790a 100644[m
+Binary files a/bin/classes/com/example/fluxiplex/Sounds.class and b/bin/classes/com/example/fluxiplex/Sounds.class differ
+[1mdiff --git a/bin/classes/com/example/fluxiplex/Splash.class b/bin/classes/com/example/fluxiplex/Splash.class[m
+[1mindex f171d13..7601d8c 100644[m
+Binary files a/bin/classes/com/example/fluxiplex/Splash.class and b/bin/classes/com/example/fluxiplex/Splash.class differ
+[1mdiff --git a/bin/dexedLibs/appcompat_v7-378c23de22d3d9e56060e15d8006f838.jar b/bin/dexedLibs/appcompat_v7-378c23de22d3d9e56060e15d8006f838.jar[m
+[1mindex b97ff65..d745ff0 100644[m
+Binary files a/bin/dexedLibs/appcompat_v7-378c23de22d3d9e56060e15d8006f838.jar and b/bin/dexedLibs/appcompat_v7-378c23de22d3d9e56060e15d8006f838.jar differ
+[1mdiff --git a/bin/fluxiplex.apk b/bin/fluxiplex.apk[m
+[1mindex 38b6700..5afbe6d 100644[m
+Binary files a/bin/fluxiplex.apk and b/bin/fluxiplex.apk differ
+[1mdiff --git a/bin/resources.ap_ b/bin/resources.ap_[m
+[1mindex f1f2c91..c8d0881 100644[m
+Binary files a/bin/resources.ap_ and b/bin/resources.ap_ differ
+[1mdiff --git a/gen/com/example/fluxiplex/R.java b/gen/com/example/fluxiplex/R.java[m
+[1mindex 0a5afbd..9404b7d 100644[m
+[1m--- a/gen/com/example/fluxiplex/R.java[m
+[1m+++ b/gen/com/example/fluxiplex/R.java[m
+[36m@@ -1148,10 +1148,11 @@[m [mcontaining a value of this type.[m
+     }[m
+     public static final class raw {[m
+         public static final int blastest_loop=0x7f050000;[m
+[31m-        public static final int clicksound=0x7f050001;[m
+[31m-        public static final int cs=0x7f050002;[m
+[31m-        public static final int csb1=0x7f050003;[m
+[31m-        public static final int csb2=0x7f050004;[m
+[32m+[m[32m        public static final int blastest_loop_wav=0x7f050001;[m
+[32m+[m[32m        public static final int clicksound=0x7f050002;[m
+[32m+[m[32m        public static final int cs=0x7f050003;[m
+[32m+[m[32m        public static final int csb1_wav=0x7f050004;[m
+[32m+[m[32m        public static final int csb2_wav=0x7f050005;[m
+     }[m
+     public static final class string {[m
+         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] [m
+[1mdiff --git a/res/raw/blastest_loop.mp3 b/res/raw/blastest_loop.mp3[m
+[1mindex e64e29d..2e575d1 100644[m
+Binary files a/res/raw/blastest_loop.mp3 and b/res/raw/blastest_loop.mp3 differ
+[1mdiff --git a/res/raw/csb1.mp3 b/res/raw/csb1.mp3[m
+[1mdeleted file mode 100644[m
+[1mindex c5a622f..0000000[m
+Binary files a/res/raw/csb1.mp3 and /dev/null differ
+[1mdiff --git a/res/raw/csb2.mp3 b/res/raw/csb2.mp3[m
+[1mdeleted file mode 100644[m
+[1mindex b17d5f6..0000000[m
+Binary files a/res/raw/csb2.mp3 and /dev/null differ
+[1mdiff --git a/src/com/example/fluxiplex/MainActivity.java b/src/com/example/fluxiplex/MainActivity.java[m
+[1mindex 67d7ea1..29f4e04 100644[m
+[1m--- a/src/com/example/fluxiplex/MainActivity.java[m
+[1m+++ b/src/com/example/fluxiplex/MainActivity.java[m
+[36m@@ -2,7 +2,9 @@[m [mpackage com.example.fluxiplex;[m
+ [m
+ import android.app.Activity;[m
+ import android.content.Intent;[m
+[32m+[m[32mimport android.media.AudioManager;[m
+ import android.media.MediaPlayer;[m
+[32m+[m[32mimport android.media.SoundPool;[m
+ import android.os.Bundle;[m
+ import android.view.View;[m
+ import android.widget.Button;[m
+[36m@@ -16,7 +18,9 @@[m [mpublic class MainActivity extends Activity {[m
+ 	Button sub;[m
+ 	TextView display;[m
+ 	ImageView rageImg;[m
+[31m-	MediaPlayer mp;[m
+[32m+[m	[32mSoundPool spma;[m
+[32m+[m	[32mint spma1 = 0;[m
+[32m+[m	[32mint spma2 = 0;[m
+ 	[m
+     @Override[m
+     protected void onCreate(Bundle savedInstanceState) {[m
+[36m@@ -27,7 +31,10 @@[m [mpublic class MainActivity extends Activity {[m
+         sub = (Button) findViewById(R.id.bSub);[m
+         display = (TextView) findViewById(R.id.tvDisplay);[m
+         rageImg = (ImageView) findViewById(R.id.rageImg);[m
+[31m-        mp = MediaPlayer.create(this, R.raw.clicksound);[m
+[32m+[m
+[32m+[m[32m        spma = new SoundPool(5, AudioManager.STREAM_MUSIC, 0);[m
+[32m+[m[32m        spma1 = spma.load(this, R.raw.csb1_wav, 1);[m
+[32m+[m	[32mspma2 = spma.load(this, R.raw.csb2_wav, 1);[m
+         [m
+         add.setOnClickListener(new View.OnClickListener() {[m
+ 			[m
+[36m@@ -35,16 +42,14 @@[m [mpublic class MainActivity extends Activity {[m
+ 			public void onClick(View v) {[m
+ 				counter++;[m
+ 				display.setText("Your rage level is " + counter);[m
+[32m+[m				[32mspma.play(spma1, 1, 1, 0, 0, 1);[m
+ [m
+ 				if(counter==21){[m
+ 					rageImg.setImageResource(R.drawable.r2);[m
+[31m-					mp.start();[m
+ 				}else if(counter==41){[m
+ 					rageImg.setImageResource(R.drawable.r3);[m
+[31m-					mp.start();[m
+ 				}else if(counter==61){[m
+ 					rageImg.setImageResource(R.drawable.r4);[m
+[31m-					mp.start();[m
+ 				}[m
+ [m
+ 				[m
+[36m@@ -57,20 +62,28 @@[m [mpublic class MainActivity extends Activity {[m
+ 			public void onClick(View v) {[m
+ 				counter--;[m
+ 				display.setText("Your rage level is " + counter);[m
+[31m-			[m
+[32m+[m				[32mspma.play(spma2, 1, 1, 0, 0, 1);[m
+[32m+[m[41m				[m
+ 				if(counter==19){[m
+ 					rageImg.setImageResource(R.drawable.r1);[m
+[31m-					mp.start();[m
+ 				}else if(counter==39){[m
+ 					rageImg.setImageResource(R.drawable.r2);[m
+[31m-					mp.start();[m
+ 				}else if(counter==59){[m
+ 					rageImg.setImageResource(R.drawable.r3);[m
+[31m-					mp.start();[m
+ 				}[m
+ 				[m
+ 			}[m
+ 		});[m
+         [m
+     }[m
+[32m+[m
+[32m+[m[32m    @Override[m
+[32m+[m[32m    protected void onStop() {[m
+[32m+[m	[32m// TODO Auto-generated method stub[m
+[32m+[m	[32msuper.onStop();[m
+[32m+[m[41m	[m
+[32m+[m	[32mspma.release();[m
+[32m+[m	[32mfinish();[m
+[32m+[m[32m    }[m
+[32m+[m[41m    [m
+ }[m
+[1mdiff --git a/src/com/example/fluxiplex/Sounds.java b/src/com/example/fluxiplex/Sounds.java[m
+[1mindex 19bba95..e071efe 100644[m
+[1m--- a/src/com/example/fluxiplex/Sounds.java[m
+[1m+++ b/src/com/example/fluxiplex/Sounds.java[m
+[36m@@ -20,6 +20,9 @@[m [mpublic class Sounds extends Activity implements OnClickListener{[m
+     SoundPool sp;[m
+     int p1 = 0;[m
+     int p2 = 0;[m
+[32m+[m[32m    int p3 = 0;[m
+[32m+[m[32m    int p4 = 0;[m
+[32m+[m[32m    int sid = 0;[m
+ [m
+     @Override[m
+     protected void onCreate(Bundle savedInstanceState) {[m
+[36m@@ -35,7 +38,12 @@[m [mpublic class Sounds extends Activity implements OnClickListener{[m
+ 	sp = new SoundPool(5, AudioManager.STREAM_MUSIC, 0);[m
+ 	p1 = sp.load(this, R.raw.clicksound, 1);[m
+ 	p2 = sp.load(this, R.raw.cs, 1);[m
+[32m+[m	[32mp3 = sp.load(this, R.raw.blastest_loop_wav, 1);[m
+[32m+[m	[32mp4 = sp.load(this, R.raw.blastest_loop_wav, 1);[m
+ 	//mps = MediaPlayer.create(this, R.raw.cs);[m
+[32m+[m[41m	[m
+[32m+[m	[32msid = sp.play(p3, 1, 1, 0, -1, 1);[m
+[32m+[m	[32msp.pause(sid);[m
+     }[m
+ [m
+     @Override[m
+[36m@@ -46,17 +54,27 @@[m [mpublic class Sounds extends Activity implements OnClickListener{[m
+ 	    sp.play(p1, 1, 1, 0, 0, 1);[m
+ 	}else if(lol.getId() == R.id.bS2){[m
+ 	    tvs1.setText(">    Play Sound 2");[m
+[31m-	    sp.play(p1, 1, 1, 0, 0, 1);[m
+[32m+[m	[32m    sp.play(p2, 1, 1, 0, 0, 1);[m
+ 	}else if(lol.getId() == R.id.bS3){[m
+ 	    tvs1.setText(">        Play Sound 3");[m
+[31m-	    sp.play(p2, 1, 1, 0, 0, 1);[m
+[32m+[m	[32m    //sid = sp.play(p3, 1, 1, 0, -1, 1);[m
+[32m+[m	[32m    sp.resume(sid);[m
+ 	}else if(lol.getId() == R.id.bS4){[m
+[31m-	    tvs1.setText(">            Play Sound 4");[m
+[31m-	    sp.play(p2, 1, 1, 0, 0, 1);[m
+[32m+[m	[32m    tvs1.setText(">            Stop Sound 3");[m
+[32m+[m	[32m    sp.pause(sid);[m
+ 	}else{[m
+ 	    tvs1.setText("Nie ma takiego klikania!");[m
+ 	}[m
+ 	[m
+     }[m
+[32m+[m[41m    [m
+[32m+[m[32m    @Override[m
+[32m+[m[32m    protected void onStop() {[m
+[32m+[m	[32m// TODO Auto-generated method stub[m
+[32m+[m	[32msuper.onStop();[m
+[32m+[m[41m	[m
+[32m+[m	[32msp.release();[m
+[32m+[m	[32mfinish();[m
+[32m+[m[32m    }[m
+ [m
+ }[m
