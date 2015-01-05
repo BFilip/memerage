@@ -981,8 +981,10 @@ containing a value of this type.
         public static final int r2=0x7f02005a;
         public static final int r3=0x7f02005b;
         public static final int r4=0x7f02005c;
+        public static final int sunglasses=0x7f02005d;
     }
     public static final class id {
+        public static final int TVopcja1=0x7f060055;
         public static final int action_bar=0x7f06001c;
         public static final int action_bar_activity_content=0x7f060015;
         public static final int action_bar_container=0x7f06001b;
@@ -998,13 +1000,13 @@ containing a value of this type.
         public static final int always=0x7f06000b;
         public static final int analogClock1=0x7f060047;
         public static final int bAdd=0x7f06003e;
-        public static final int bResults=0x7f06005b;
-        public static final int bS1=0x7f060056;
-        public static final int bS2=0x7f060057;
-        public static final int bS3=0x7f060058;
-        public static final int bS4=0x7f060059;
+        public static final int bResults=0x7f06005c;
+        public static final int bS1=0x7f060057;
+        public static final int bS2=0x7f060058;
+        public static final int bS3=0x7f060059;
+        public static final int bS4=0x7f06005a;
         public static final int bSendEmail=0x7f060046;
-        public static final int bSendTxt=0x7f06005e;
+        public static final int bSendTxt=0x7f06005f;
         public static final int bSub=0x7f06003f;
         public static final int beginning=0x7f060011;
         public static final int button1=0x7f060054;
@@ -1023,7 +1025,7 @@ containing a value of this type.
         public static final int edit_query=0x7f060030;
         public static final int end=0x7f060013;
         public static final int etAction=0x7f060044;
-        public static final int etCommands=0x7f06005a;
+        public static final int etCommands=0x7f06005b;
         public static final int etEmails=0x7f060040;
         public static final int etIntro=0x7f060041;
         public static final int etName=0x7f060042;
@@ -1042,6 +1044,8 @@ containing a value of this type.
         public static final int never=0x7f060009;
         public static final int none=0x7f060010;
         public static final int normal=0x7f060000;
+        public static final int opcja1=0x7f060061;
+        public static final int opcja2=0x7f060062;
         public static final int progress_circular=0x7f060018;
         public static final int progress_horizontal=0x7f060019;
         public static final int radio=0x7f06002f;
@@ -1063,7 +1067,7 @@ containing a value of this type.
         public static final int split_action_bar=0x7f06001e;
         public static final int submit_area=0x7f060039;
         public static final int tabMode=0x7f060002;
-        public static final int tbPassword=0x7f06005c;
+        public static final int tbPassword=0x7f06005d;
         public static final int textView1=0x7f060048;
         public static final int textView2=0x7f06004a;
         public static final int textView3=0x7f06004c;
@@ -1073,9 +1077,9 @@ containing a value of this type.
         public static final int title=0x7f06002b;
         public static final int top_action_bar=0x7f060020;
         public static final int tvDisplay=0x7f06003c;
-        public static final int tvResults=0x7f06005d;
-        public static final int tvS1=0x7f060055;
-        public static final int txtPole=0x7f06005f;
+        public static final int tvResults=0x7f06005e;
+        public static final int tvS1=0x7f060056;
+        public static final int txtPole=0x7f060060;
         public static final int up=0x7f060021;
         public static final int useLogo=0x7f060003;
         public static final int withText=0x7f06000c;
@@ -1132,15 +1136,22 @@ containing a value of this type.
         public static final int activity_main=0x7f030017;
         public static final int email=0x7f030018;
         public static final int nextapp=0x7f030019;
-        public static final int sounds=0x7f03001a;
-        public static final int splash=0x7f03001b;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001c;
-        public static final int text=0x7f03001d;
-        public static final int txt=0x7f03001e;
+        public static final int opcja1=0x7f03001a;
+        public static final int sounds=0x7f03001b;
+        public static final int splash=0x7f03001c;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001d;
+        public static final int text=0x7f03001e;
+        public static final int txt=0x7f03001f;
+    }
+    public static final class menu {
+        public static final int cool_menu=0x7f0d0000;
     }
     public static final class raw {
-        public static final int clicksound=0x7f050000;
-        public static final int cs=0x7f050001;
+        public static final int blastest_loop=0x7f050000;
+        public static final int clicksound=0x7f050001;
+        public static final int cs=0x7f050002;
+        public static final int csb1=0x7f050003;
+        public static final int csb2=0x7f050004;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
