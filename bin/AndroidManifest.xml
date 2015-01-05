@@ -61,6 +61,11 @@
             android:label="@string/app_name" >
         </activity>
         
+        <activity
+            android:name="com.example.fluxiplex.Txt"
+            android:label="@string/app_name" >
+        </activity>        
+        
         </application>
 
 </manifest>

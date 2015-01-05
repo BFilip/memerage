@@ -1004,6 +1004,7 @@ containing a value of this type.
         public static final int bS3=0x7f060058;
         public static final int bS4=0x7f060059;
         public static final int bSendEmail=0x7f060046;
+        public static final int bSendTxt=0x7f06005e;
         public static final int bSub=0x7f06003f;
         public static final int beginning=0x7f060011;
         public static final int button1=0x7f060054;
@@ -1074,6 +1075,7 @@ containing a value of this type.
         public static final int tvDisplay=0x7f06003c;
         public static final int tvResults=0x7f06005d;
         public static final int tvS1=0x7f060055;
+        public static final int txtPole=0x7f06005f;
         public static final int up=0x7f060021;
         public static final int useLogo=0x7f060003;
         public static final int withText=0x7f06000c;
@@ -1134,6 +1136,7 @@ containing a value of this type.
         public static final int splash=0x7f03001b;
         public static final int support_simple_spinner_dropdown_item=0x7f03001c;
         public static final int text=0x7f03001d;
+        public static final int txt=0x7f03001e;
     }
     public static final class raw {
         public static final int clicksound=0x7f050000;

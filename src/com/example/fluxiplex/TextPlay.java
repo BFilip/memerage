@@ -3,6 +3,7 @@ package com.example.fluxiplex;
 import java.util.Random;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.InputType;
@@ -20,6 +21,8 @@ public class TextPlay extends Activity implements View.OnClickListener{
 	EditText input;
 	TextView display;
 	
+	Button sendTxt;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -31,6 +34,8 @@ public class TextPlay extends Activity implements View.OnClickListener{
 		passTog.setOnClickListener(this);
 		chkCmd.setOnClickListener(this);
 		
+		sendTxt.setOnClickListener(this);
+		
 	}
 
 	private void bekon() {
@@ -39,6 +44,8 @@ public class TextPlay extends Activity implements View.OnClickListener{
 		passTog = (ToggleButton) findViewById(R.id.tbPassword);
 		input = (EditText) findViewById(R.id.etCommands);
 		display = (TextView) findViewById(R.id.tvResults);
+		
+		sendTxt = (Button) findViewById(R.id.bSendTxt);
 	}
 
 	@Override
@@ -85,6 +92,24 @@ public class TextPlay extends Activity implements View.OnClickListener{
 				input.setInputType(InputType.TYPE_CLASS_TEXT);
 			}
 			break;
+			
+		//Wysy³anie zawartoœci pola do innego activity.
+		case R.id.bSendTxt:
+                    try {
+                	String txt = input.getText().toString();
+		    	Bundle basket = new Bundle();
+		    	basket.putString("key", txt);
+		    	Class dlaTxt;
+	                dlaTxt = Class.forName("com.example.fluxiplex.Txt");
+	                Intent a = new Intent(TextPlay.this, dlaTxt);
+	                a.putExtras(basket);
+	                startActivity(a);
+                    } catch (ClassNotFoundException e) {
+	                // TODO Auto-generated catch block
+	                e.printStackTrace();
+                    }
+                    
+		    break;
 		}
 	}
 
