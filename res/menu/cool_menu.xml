@@ -8,7 +8,11 @@
         android:alphabeticShortcut="a"/>
     
     <item
-        android:title="Opcja2"
-        android:id="@+id/opcja2"/>    
+        android:title="Prefs2"
+        android:id="@+id/preferencje"/>    
+        
+    <item
+        android:title="Exit"
+        android:id="@+id/exit"/>  
 
 </menu>

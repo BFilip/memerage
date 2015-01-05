@@ -58,10 +58,20 @@ public class Menu extends ListActivity{
                 } catch (ClassNotFoundException e) {
 	            e.printStackTrace();
                 }
-		
 		break;
-	    case R.id.opcja2:
 		
+	    case R.id.preferencje:
+                try {
+                    Class OPrefs = Class.forName("com.example.fluxiplex.Prefs");
+	            Intent p = new Intent(Menu.this, OPrefs);
+	            startActivity(p);
+                } catch (ClassNotFoundException e) {
+	            e.printStackTrace();
+                }		
+		break;
+		
+	    case R.id.exit:
+                finish();
 		break;
 	    }
 	    return false;

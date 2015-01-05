@@ -76,6 +76,16 @@
             </intent-filter>
         </activity>        
     
+        <activity
+            android:name="com.example.fluxiplex.Prefs"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog" >
+            <intent-filter>
+                <action android:name="com.example.fluxiplex.PREFS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> 
+        
         </application>
 
 </manifest>
