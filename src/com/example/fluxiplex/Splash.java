@@ -4,8 +4,10 @@ import java.io.IOException;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 
 public class Splash extends Activity{
 
@@ -18,7 +20,10 @@ public class Splash extends Activity{
 		setContentView(R.layout.splash);
 		
 		splashSound = MediaPlayer.create(Splash.this, R.raw.cs);
-		splashSound.start();
+		
+		SharedPreferences getPrefs = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+		boolean startSound = getPrefs.getBoolean("checkbox", true);
+		if(startSound == true)splashSound.start();
 		
 		Thread timer = new Thread(){
 			public void run(){
