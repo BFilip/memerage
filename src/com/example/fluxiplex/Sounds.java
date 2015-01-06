@@ -6,6 +6,8 @@ import android.media.MediaPlayer;
 import android.media.SoundPool;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
@@ -28,6 +30,11 @@ public class Sounds extends Activity implements OnClickListener{
     protected void onCreate(Bundle savedInstanceState) {
 	// TODO Auto-generated method stub
 	super.onCreate(savedInstanceState);
+	
+	//fullscreen
+	requestWindowFeature(Window.FEATURE_NO_TITLE);
+	getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+	
 	setContentView(R.layout.sounds);
 	
 	s1 = (Button) findViewById(R.id.bS1);	s1.setOnClickListener(this);

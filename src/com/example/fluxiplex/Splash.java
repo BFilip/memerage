@@ -8,6 +8,8 @@ import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.view.Window;
+import android.view.WindowManager;
 
 public class Splash extends Activity{
 
@@ -17,6 +19,11 @@ public class Splash extends Activity{
 	protected void onCreate(Bundle Arjusiur) {
 		// TODO Auto-generated method stub
 		super.onCreate(Arjusiur);
+		
+		//fullscreen
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
+		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+		
 		setContentView(R.layout.splash);
 		
 		splashSound = MediaPlayer.create(Splash.this, R.raw.cs);
