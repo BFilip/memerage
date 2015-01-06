@@ -62,6 +62,8 @@ public class Sounds extends Activity implements OnClickListener{
 	}else if(lol.getId() == R.id.bS4){
 	    tvs1.setText(">            Stop Sound 3");
 	    sp.pause(sid);
+	}else if(lol.getId() == R.id.bWoot){
+	    tvs1.setText("Custom button! :D");
 	}else{
 	    tvs1.setText("Nie ma takiego klikania!");
 	}

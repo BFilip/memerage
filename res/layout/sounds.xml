@@ -41,6 +41,13 @@
 		    android:layout_height="wrap_content"
 		    android:layout_gravity="right"
 		    android:text="Sound4" />
+		
+		<Button
+		    android:id="@+id/bWoot"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="right"
+		    android:background="@drawable/custom" />
 	
     
 </LinearLayout>
