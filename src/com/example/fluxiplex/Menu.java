@@ -13,7 +13,7 @@ import android.widget.ListView;
 
 public class Menu extends ListActivity{
 
-	String classes[] = { "MainActivity", "Splash", "TextPlay", "NextApp", "Email", "Sounds", "GFX" };
+	String classes[] = { "MainActivity", "Splash", "TextPlay", "NextApp", "Email", "Sounds", "GFX", "GFXSurface" };
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
